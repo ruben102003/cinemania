@@ -25,7 +25,10 @@ const Header = () => {
         <input type="text" placeholder="Buscar..." />
       </div>
       <div className="login">
-        <button>Iniciar Sesión</button>
+        {/* Enlace al login usando Link */}
+        <Link to="/login">
+          <button>Iniciar Sesión</button>
+        </Link>
       </div>
     </header>
   );

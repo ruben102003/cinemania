@@ -1,0 +1,32 @@
+.slick-prev:before, .slick-next:before {
+    color: black;
+  }
+  
+  .slick-dots li button:before {
+    color: black;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: black;
+  }
+
+  
+  .carousel-container img {
+    width: 40%; /* Ajusta el ancho de la imagen al 80% del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    max-width: 600px; /* Define un ancho máximo para las imágenes del carrusel */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+  }
+  .publicidad-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%; /* Ancho del contenedor de publicidad */
+    margin-left: 10px; /* Espaciado entre el carrusel y las publicidades */
+}
+.publicidad-container img {
+  width: 100%; /* Las imágenes de publicidad ocupan todo el ancho del contenedor */
+  height: auto;
+  margin-bottom: 10px; /* Espaciado entre las imágenes de publicidad */
+  display: block;
+}

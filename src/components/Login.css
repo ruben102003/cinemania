@@ -1,0 +1,108 @@
+/* Contenedor principal del login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Usa toda la altura de la ventana */
+    width: 100vw; /* Usa todo el ancho de la ventana */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/fondoLogin.jpg'); /* Fondo con imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho y alto */
+}
+
+/* Estilo del formulario */
+.login-form {
+    background: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque de fondo */
+}
+
+/* Título del formulario */
+.login-form h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Estilo de los grupos de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo de las etiquetas */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Estilo de los campos de entrada */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out; /* Animación suave en el borde */
+}
+
+/* Cambiar borde y sombra del campo de entrada en foco */
+.form-group input:focus {
+    border-color: #ff7e5f;
+    box-shadow: 0 0 8px rgba(255, 126, 95, 0.6);
+    outline: none;
+}
+
+/* Estilo del botón de login */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7e5f;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Estilo del botón en hover */
+.login-button:hover {
+    background-color: #feb47b;
+}
+
+/* Estilo del enlace de registro */
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Cambiar color del enlace en hover */
+.register-link:hover {
+    color: #ff7e5f;
+    text-decoration: underline;
+}
+/* Estilo del mensaje de error */
+.error-message {
+    color: red; /* Color rojo para el mensaje de error */
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 15px;
+}
